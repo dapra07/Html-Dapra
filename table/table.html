@@ -4,26 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table Biodata</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+        }
+        header{
+            background-color: #6797a5;
+            padding: 50px;
+            margin: 10px;
+            border-radius: 9px;
+        }
+
+        body{
+            background-color:#344955 ;
+            color: #fff;
+            justify-content: center;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            font-variant: normal;
+        }
+
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            border-spacing: 0px;
+            border-collapse: collapse;
+            border: 1px solid #fff;
+            text-align: center;
+            
+        }
+        table td{
+            border: none;
+            padding: 20px;
+            
+        }
+        table th{
+            border: none;
+            padding: 20px;    
+        }
+        table tr:first-child th{
+            background-color: #51805e;
+            color: #fff;
+        }
+        table tr:nth-child(2n){
+            background-color:#628a6d ;
+            color: #ffffff;   
+        }
+        table tr:hover{
+            background-color: #638d99;
+        }
+        .btn button{
+
+            width: 70px;
+            height: 30px;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            font-family: arial;
+            font-size: 15px;
+            font-weight: 500;
+            background: #fff;
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            margin-left: 500px;
+        }
+        button:hover{
+            background-color: #c2e0a4;
+        }
+        button:active{
+            background-color: #e6ecdc;
+        }
+
+    </style>
 </head>
 <body>
-    <h1 title="i'am a header">Selamat Datang</h1>
-    <hr>
-    <table border="1" cellspacing="0" cellpadding="3">
-        <tr>
-            <td>Nama</td>
-            <td>Umur</td>
-            <td>Asal</td>
-        </tr>
-        <tr>
-            <td>Abdulah Riyan</td><td>23</td><td>Banjarnegara Jawa Tengah</td>
-        </tr>
-        <tr>
-            <td>Masdiana Sitio</td><td>20</td><td>Lubuk Pakam Sumatra Utara</td>
-        </tr>
-        <tr>
-            <td>Daniel Anggi Prakasiwi</td><td>24</td><td>Malang Jawa Timur</td>
-        </tr>
+    <header>
+            <h1 title="i'am a header">Biodata</h1>
+    </header>
+    <table title="Biodata">
+        <Thead>
+            <tr>
+                <th>Nama</th>
+                <th>Umur</th>
+                <th>Asal</th>
+            </tr>
+        </Thead>    
+        <Tbody>
+                <tr>
+                    <td>Caroline Hana Parengkuan</td><td>27</td><td>Manado Sulawesi Utara</td>
+                </tr>
+                <tr> 
+                    <td><a href="table2.html">Masdiana Sitio</td><td>20</td><td>Lubuk Pakam Sumatra Utara</td>
+                </tr></a>
+                <tr>
+                    <td>Daniel Anggi Prakasiwi</td><td>24</td><td>Malang Jawa Timur</td>
+                </tr>
+                <tr>
+                    <td>Ovis Balu Shay</td><td>24</td><td>Lombok NTT</td>
+                </tr>
+                <tr>
+                    <td>Aprillia Putri Ardani</td><td>22</td><td>Malang Jawa Timur</td>
+                </tr>
+        </Tbody>        
     </table>
-    <a href="table2.html"><img src="../image/next.png" alt="Eror" title="Ke Halaman 2"></a>
-</body>
+    <div class="btn" title="Next">
+        <a href="table2.html"><button type="button" >Next</button></a>
+    </div>
+    
 </html>
